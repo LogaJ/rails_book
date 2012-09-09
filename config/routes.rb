@@ -1,4 +1,6 @@
 Demo::Application.routes.draw do
+  get "filer/files"
+
   get "say/hello"
 
   get "say/goodbye"
