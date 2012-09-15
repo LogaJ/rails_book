@@ -3,3 +3,6 @@ rake:
 rake db:rollback - delete the table AND the data!
 rake db:migrate - create the db schema
 rake db:seed  - enter data into the db
+
+
+In rails the database only store upto two decimal places so: 0.001 would actually be stored as 0.00, when using validations for numbers being more than zero you should validad that the number is actually 0.01.
